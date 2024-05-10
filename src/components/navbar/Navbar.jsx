@@ -4,7 +4,7 @@ import './Navbar.css';
 import { useState } from "react";
 
 const Navbar = () => {
-    const [showMobileMenu, setshowMobileMenu] = useState(true)
+    const [showMobileMenu, setshowMobileMenu] = useState(false)
     return (
         <div className="navbar">
             <div className="navbarInner">

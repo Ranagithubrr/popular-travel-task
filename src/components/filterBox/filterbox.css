@@ -1,0 +1,91 @@
+.FilterBox {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.FilterBoxInner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.FilterBoxInner h2 {
+    margin: 0;
+    border-bottom: 2px solid rgb(235, 235, 235);
+    padding-bottom: 5px;
+}
+
+.FilterBoxInner .threeButton {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #8D97F9;
+    margin-top: 20px;
+}
+
+.FilterBoxInner .threeButton button {
+    border: 1px solid #2E3791;
+    outline: none;
+    font-weight: 600;
+    padding: 3px 15px;
+    cursor: pointer;
+}
+
+.FilterBoxInner .threeButton button:focus,
+.FilterBoxInner .threeButton button:active {
+    background-color: #2E3791;
+    color: #eee;
+}
+
+.FilterBoxInner .searchBoxTop {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.FilterBoxInner .searchBoxTop input {
+    width: 100%;
+    margin: 0 5px;
+    padding: 5px;
+}
+
+.FilterBoxInner .searchBoxTop select {
+    width: 100%;
+    margin: 0 5px;
+}
+
+.FilterBoxInner .searchBoxTop span {
+    display: inline-block;
+    margin-top: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.FilterBoxInner .searchBoxBottom {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 14px;
+    border-top: 1px solid #8D97F9;
+    border-bottom: 1px solid #8D97F9;
+}
+
+.FilterBoxInner .searchBoxBottom label {
+    padding: 0 5px;
+}
+
+.FilterBoxInner .searchBoxBottom .searchButton {
+    background-color: #312E81;
+    color: #eee;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 8px 15px;
+}
