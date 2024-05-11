@@ -10,7 +10,7 @@ const DataTable = () => {
     const FetchData = async () => {
         setLoading(true);
         try {
-            const response = await axios.get('./data.txt');
+            const response = await axios.get('data.txt');
             if (response.status === 200 && response.data && response.data.flightOffer) {
                 setData(response.data.flightOffer);
             }
