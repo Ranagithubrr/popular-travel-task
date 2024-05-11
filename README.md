@@ -1,8 +1,26 @@
-# React + Vite
+# Dhaka Popular Travel Intern Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+### Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Install dependencies**: Run the following command to install project dependencies.
+
+    ```bash
+    npm install
+    ```
+
+2. **Start the development server**: Run the following command to start the development server.
+
+    ```bash
+    npm run dev
+    ```
+
+3. **Visit the port from terminal**: Open your web browser and navigate to the port mentioned in the terminal (typically `http://localhost:5173/`).
+
+
+
+## Contact
+
+- Masud Rana - (https://rana-rr.com)
+- Project Link: (https://popular-travel-task.netlify.app/)
+
