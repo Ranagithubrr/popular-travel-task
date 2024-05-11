@@ -5,6 +5,8 @@ import axios from 'axios';
 const DataTable = () => {
     const [loading, setLoading] = useState(false);
     const [data, setData] = useState([]);
+
+    // fetching data
     const FetchData = async () => {
         setLoading(true);
         try {
@@ -123,7 +125,7 @@ const DataTable = () => {
                             </tbody>
                         </table>
                         {
-                            data && data.length === 0 && <div className='NoDataFound'>
+                           !loading && data && data.length === 0 && <div className='NoDataFound'>
                                 <span>No Data Found</span>
                             </div>
                         }

@@ -1,5 +1,11 @@
-import './filterbox.css'
+import { useState } from 'react';
+import './filterbox.css';
+import { FaFilter } from 'react-icons/fa';
+
 const Filterbox = () => {
+
+    const [mobileFilter, setMobileFilter] = useState(false);
+
     return (
         <div className='FilterBox'>
             <div className="FilterBoxInner">
@@ -10,7 +16,8 @@ const Filterbox = () => {
                     <button>Multi City</button>
                 </div>
                 <div className='searchBox'>
-                    <div className="searchBoxTop">
+                    <button className='mobileFilterButton' onClick={() => setMobileFilter(prev => !prev)}> <span><FaFilter /></span> Filter</button>
+                    <div className={`searchBoxTop ${mobileFilter ? 'showInMobile' : ''}`}>
                         <input type="text" placeholder='LHR' />
                         <input type="text" placeholder='CDG' />
                         <input type="date" name="" id="" />

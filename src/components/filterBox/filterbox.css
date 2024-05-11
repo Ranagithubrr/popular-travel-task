@@ -3,7 +3,9 @@
     margin: 0 auto;
 
 }
-
+.FilterBox .searchBox .mobileFilterButton {
+    display: none;
+}
 .FilterBoxInner {
     width: 80%;
     margin: 0 auto;
@@ -88,4 +90,53 @@
     cursor: pointer;
     border-radius: 2px;
     padding: 8px 15px;
+}
+
+@media screen and (max-width:768px) {
+    .FilterBoxInner .searchBoxTop {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .FilterBox .searchBox .mobileFilterButton {
+        display: block;
+    }
+    .searchBox .mobileFilterButton {    
+        background-color: #312E81;
+        color: #eee;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 2px;
+        padding: 8px 15px;
+        margin-top: 10px;
+    }
+    .searchBox .mobileFilterButton span{
+        margin-right: 5px;
+    }
+
+    .searchBoxTop {
+        height: 0;
+        box-sizing: border-box;
+        width: 100%;
+        padding-right: 20px;
+        overflow: hidden;
+        display: initial;
+        transition: 0.3s ease;
+    }
+
+    .showInMobile {
+        height: 200px;
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .FilterBoxInner .searchBoxBottom {
+        display: initial;
+    }
 }
